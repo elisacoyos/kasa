@@ -1,12 +1,24 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     color: #ff6060;
     font-weight: 500;
     gap: 2rem;
 }
 
-.navbar__logo {
-    margin-right: auto;
+.navbar a {
+    text-decoration: none;
+    color: #ff6060; 
 }
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+.navbar a.active {
+    text-decoration: underline;
+}
+
+.navbar *:first-child {
+    margin-right: auto;
+  }
