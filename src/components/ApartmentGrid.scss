@@ -1,5 +1,7 @@
+@import '../scss/variables.scss';
+
 .grid {
-    background-color: #F6F6F6 ;
+    background-color: #F6F6F6;
     min-height: 50vh;
     border-radius: 2rem;
     display: flex;
@@ -7,12 +9,10 @@
     gap: 1rem;
     padding: 1rem;
     justify-content: space-between;
-}
 
-@media screen and (width <= 768px) {
-    .grid {
+    @media screen and (max-width: 768px) {
         justify-content: center;
-        background-color: white;
+        background-color: $color-tertiary;
         padding: 0;
-    }  
+    }
 }

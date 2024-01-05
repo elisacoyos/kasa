@@ -1,4 +1,3 @@
-
 import {
   BrowserRouter,
     Route,
@@ -8,7 +7,8 @@ import {
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import About from "./pages/About";
-
+import ApartmentPage from "./pages/ApartmentPage";
+import Error from "./pages/error"; 
 
 
   function Router () {
@@ -19,9 +19,8 @@ import About from "./pages/About";
         <Route path="/" element={<Layout/>}>
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/flat" element={<div>A propos</div>}/>
-          <Route path="/error" element={<div>404</div>}/>
-
+          <Route path="/flat" element={<ApartmentPage/>}/>
+          <Route path="/*" element={<Error/>}/>
         </Route>
        </Routes>
        </BrowserRouter>
