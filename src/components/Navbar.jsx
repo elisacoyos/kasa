@@ -7,18 +7,16 @@ function Navbar() {
   return (
     <nav className='navbar'>
         
-        <NavLink to="/">
-          <div className='navbar__logo'>
+        <NavLink className='navbar__logo' to="/">
             <img src='./src/assets/logo.png' alt="Logo" width="200"/>
-          </div>
         </NavLink>
 
         <NavLink to="/">
-          <div>Accueil</div>
+          Accueil
         </NavLink>
 
         <NavLink to="/about">
-          <div>A propos</div>
+          A propos
         </NavLink>
     </nav>
   )
