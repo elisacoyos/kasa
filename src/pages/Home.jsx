@@ -7,7 +7,7 @@ import ApartmentGrid from "../components/ApartmentGrid";
 function Home() {
     return (
         <Fragment>
-        <Banner text="Chez vous,, partout et ailleurs" img={imgBanner} />
+        <Banner text="Chez vous, partout et ailleurs" img={imgBanner} />
         <ApartmentGrid />
         </Fragment>
     )
