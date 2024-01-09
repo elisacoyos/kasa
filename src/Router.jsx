@@ -19,7 +19,7 @@ import Error from "./pages/Error";
         <Route path="/" element={<Layout/>}>
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/flat" element={<ApartmentPage/>}/>
+          <Route path="/logement/:logementId" element={<ApartmentPage/>}/>
           <Route path="/*" element={<Error/>}/>
         </Route>
        </Routes>
