@@ -1,44 +1,53 @@
 import './Carrousel.scss';
-import { useState } from 'react';
-import prevBtn from '../assets/prev-btn.png';
-import nextBtn from '../assets/next-btn.png';
+import { useEffect, useState } from 'react';
+import prevBtn from '../../assets/prev-btn.png';
+import nextBtn from '../../assets/next-btn.png';
 
 
 export default function Carrousel({ slides, title }) {
 
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [fading, setFading] = useState(false);
+    
+	let TimeOut=null;
+
+	useEffect(()=>{
+		return ()=>{
+			clearTimeout(TimeOut)
+		}
+	},[TimeOut])
+
 
 	function goToPrevious() {
-		setFading(true);// on passe fading à true pour que la transition se fasse
-		setTimeout(() => {
+		setFading(true);
+		TimeOut= setTimeout(() => {
 			if (currentIndex === 0) {
 				setCurrentIndex(slides.length - 1);
 			} else {
 				setCurrentIndex(currentIndex - 1);
 			}
-			setFading(false);// on passe fading à false pour que la transition se fasse
-		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
+			setFading(false);
+		}, 300);
 	}
 
 	function goToNext() {
-		setFading(true); // 
-		setTimeout(() => {
+		setFading(true); 
+		TimeOut=setTimeout(() => {
 			if (currentIndex === slides.length - 1) {
 				setCurrentIndex(0);
 			} else {
 				setCurrentIndex(currentIndex + 1);
 			}
-			setFading(false); //
-		}, 200); // ce doit être le même temps que celui défini dans le CSS pour la transition
+			setFading(false); 
+		}, 300); 
 	}
 
 	return (
 		<div className='carrousel'>
 			{
-				slides.length === 0 ? ( // si pas de photo
+				slides.length === 0 ? ( 
 					<h2 className="carrousel__no-photo-msg">Pas de photo disponible ..</h2>
-				) : slides.length === 1 ? ( // si une seule photo
+				) : slides.length === 1 ? (
 					<img src={slides[currentIndex]} className='carrousel__slides' alt={title} />
 				) : (
 					<div>

@@ -1,9 +1,9 @@
 import { Fragment, useEffect } from "react";
-import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
-import aboutData from '../assets/data/aboutData.json';
+import Banner from "../../components/Banner/Banner";
+import Collapse from "../../components/Collapse/Collapse";
+import aboutData from '../../data/aboutData.json';
 import './About.scss';
-import imgAbout from '../assets/about-img.png';
+import imgAbout from '../../assets/about-img.png';
 
 function About() {
     useEffect(() => {

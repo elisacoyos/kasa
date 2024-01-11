@@ -1,8 +1,8 @@
 import React, { useEffect, Fragment } from "react";
-import imgBanner from '../assets/banner-img.png';
-import Banner from "../components/Banner";
-import Card from "../components/Card"; // Asegúrate de que este es el nombre correcto
-import logementData from '../assets/data/logementData.json'; // Asegúrate de que la ruta de importación sea correcta
+import imgBanner from '../../assets/banner-img.png';
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/Card"; 
+import logementData from '../../data/logementData.json';
 import './Home.scss';
  
 
