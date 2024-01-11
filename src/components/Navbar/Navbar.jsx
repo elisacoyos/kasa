@@ -8,14 +8,14 @@ function Navbar() {
     <nav className='navbar'>
         
         <NavLink className='navbar__logo' to="/">
-            <img src='../src/assets/logo.png' alt="Logo" width="200"/>
+            <img src='../src/assets/logo.png' alt="Logo" width="160"/>
         </NavLink>
 
-        <NavLink to="/">
+        <NavLink className='navbar__nav' to="/">
           Accueil
         </NavLink>
 
-        <NavLink to="/about">
+        <NavLink className='navbar__nav' to="/about">
           A propos
         </NavLink>
     </nav>

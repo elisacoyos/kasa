@@ -20,6 +20,14 @@
             text-decoration: underline;
         } 
     }
+
+    @media (max-width: 550px) {
+        &__nav {
+            text-transform: uppercase; 
+            font-size: 0.8rem; 
+            white-space: nowrap;
+        }
+    }
     
 }
 
