@@ -27,7 +27,7 @@ export default function Carrousel({ slides, title }) {
 				setCurrentIndex(currentIndex - 1);
 			}
 			setFading(false);
-		}, 300);
+		}, 200);
 	}
 
 	function goToNext() {
@@ -39,7 +39,7 @@ export default function Carrousel({ slides, title }) {
 				setCurrentIndex(currentIndex + 1);
 			}
 			setFading(false); 
-		}, 300); 
+		}, 200); 
 	}
 
 	return (

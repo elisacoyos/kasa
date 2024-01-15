@@ -10,7 +10,6 @@ import About from "./pages/About/About";
 import ApartmentPage from "./pages/ApartmentPage/ApartmentPage";
 import Error from "./pages/Error/Error"; 
 
-
   function Router () {
     
     return (
@@ -25,7 +24,5 @@ import Error from "./pages/Error/Error";
        </Routes>
        </BrowserRouter>
     )
-
 }
-
 export default Router

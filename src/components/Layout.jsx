@@ -4,7 +4,8 @@ import Main from "./Main/Main"
 import Footer from "./Footer/Footer"
 import { Outlet } from "react-router-dom"
 
-const Layout= ()=> {
+
+export default function Layout() {
     return (
         <Fragment>
         <Navbar />
@@ -15,5 +16,3 @@ const Layout= ()=> {
         </Fragment>
     )
 }
-
-export default Layout
