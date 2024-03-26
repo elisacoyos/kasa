@@ -1,10 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// Utiliza la ruta base '/kasa/' para producción, pero usa '/' para desarrollo local.
-const base = process.env.NODE_ENV === 'production' ? '/kasa/' : '/';
-
+// https://vitejs.dev/config/
 export default defineConfig({
-  base,
   plugins: [react()],
-});
+})
+
+
