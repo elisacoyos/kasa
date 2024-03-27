@@ -1,7 +1,7 @@
 {
+  "homepage": "https://elisacoyos.github.io/kasa",
   "name": "kasa",
   "private": true,
-  "homepage": "https://elisacoyos.github.io/kasa",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
