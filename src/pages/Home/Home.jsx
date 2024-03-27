@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from "react";
+import { useEffect, Fragment } from "react";
 import imgBanner from '../../assets/banner-img.png';
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card"; 
