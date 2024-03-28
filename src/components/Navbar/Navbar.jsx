@@ -7,7 +7,7 @@ function Navbar() {
     <nav className='navbar'>
         
         <NavLink className='navbar__logo' to="/">
-            <img src='./src/assets/logo.png' alt="Logo" width="160"/>
+            <img src='../../assets/logo.png' alt="Logo" width="160"/>
         </NavLink>
 
         <NavLink className='navbar__nav' to="/">
