@@ -1,11 +1,11 @@
-import React from 'react';
 import "./Footer.scss";
+import logo from "../../assets/logo.png"
 
 function Footer() {
   return (
     <div className='footer'>
         <div >
-            <img src='../src/assets/logo-black.png' alt="logo" width="80" />
+        <img src={logo} alt="logo" width="80" />
                  
         </div>
         <div className='footer__text'>
